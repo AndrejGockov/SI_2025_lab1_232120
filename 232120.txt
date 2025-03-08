@@ -1,0 +1,31 @@
+13. Го update-уваме локалниот репозиториум
+git fetch origin
+
+14-17. Прво со checkout мењаваме во бараниот branch. Потоа ги правиме промените во java фајлот. Додаваме име во commit и го push-аме во бараниот branch
+Овој процес го повторуваме за сите 3 гранки.
+
+git checkout 1-remove-a-task-by-name
+git add SI2025Lab1Main.java
+git commit -m "Task 1 Solved"
+git push -u origin 1-remove-a-task-by-name
+
+git checkout 2-find-all-completed-tasks
+git add SI2025Lab1Main.java
+git commit -m "Task 2 Solved"
+git push -u origin 2-find-all-completed-tasks
+
+
+git checkout 4-sort-tasks-by-priority
+git add SI2025Lab1Main.java
+git commit -m "Task 4 Solved"
+git push -u origin 4-sort-tasks-by-priority
+
+
+20-22. 
+Прво правиме pull requests и оставаме еден branch за да можеме локално да го споиме.
+Откако ќе ги направиме pull requests, повикуваме: git pull origin master. За да добиеме сегашната состојба на master branch. Следно мењаваме во master branch и правиме merge so третиот branch
+
+git pull origin master
+git checkout master
+git merge origin 4-sort-tasks-by-priority
+git push -u origin master
